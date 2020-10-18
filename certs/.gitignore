@@ -1,0 +1,5 @@
+*
+!.gitignore
+!default.crt
+!default.key
+!dhparam.pem

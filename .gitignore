@@ -1,0 +1,6 @@
+.DS_Store
+/html
+/mysql
+/portainer
+/redis
+/vhost.d
