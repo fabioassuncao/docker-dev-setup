@@ -1,16 +1,17 @@
-# Docker-compose templates
+# Docker Dev Setup
 
-Templates para configuração rápida de containers Docker para proxy reverso com nginx, configuração automática de virtualhosts e geração de certificados SSL com Let's Encrypt, além de alguns outros utilitários.
+Meu setup pessoal para desenvolvimento web com Docker.
 
 ## Imagens utilizadas
 
 1. [portainer](https://github.com/portainer/portainer)
-2. [nextcloud](https://github.com/nextcloud/server)
-3. [nginx](https://github.com/nginx/nginx)
-4. [mysql](https://hub.docker.com/r/codions/mysql/)
-5. [phpmyadmin](https://hub.docker.com/r/phpmyadmin/phpmyadmin/)
-6. [jwilder/docker-gen](https://github.com/jwilder/docker-gen)
-7. [jrcs/letsencrypt-nginx-proxy-companion](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion)
+2. [nginx](https://github.com/nginx/nginx)
+3. [mysql](https://github.com/mysql/mysql-server)
+4. [postgres](https://github.com/postgres/postgres)
+5. [redis](https://github.com/redis/redis)
+6. [mailcatcher](https://github.com/sj26/mailcatcher)
+7. [jwilder/docker-gen](https://github.com/jwilder/docker-gen)
+8. [jrcs/letsencrypt-nginx-proxy-companion](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion)
 
 ## Dicas
 

@@ -11,13 +11,23 @@ services:
       MYSQL_ROOT_PASSWORD: mysql
     volumes:
       - ./mysql:/var/lib/mysql
-    networks:
-      - default
+
+  postgres:
+    container_name: postgres
+    image: postgres:10
+    restart: always
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
+    ports: 
+      - "5432:5432"
 
   mail:
     image: codions/mailcatcher
     container_name: mail
-    restart: unless-stopped
+    restart: always
     ports:
       - "1025:1025"
       - "1080:1080"
@@ -25,7 +35,7 @@ services:
   redis:
     image: redis:latest
     container_name: redis
-    restart: unless-stopped
+    restart: always
     command: --appendonly yes --requirepass redis
     volumes:
       - ./redis:/data
