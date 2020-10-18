@@ -31,6 +31,9 @@ services:
     ports:
       - "1025:1025"
       - "1080:1080"
+      environment:
+        VIRTUAL_HOST: mail.local
+        VIRTUAL_PORT: 1080
 
   redis:
     image: redis:latest
